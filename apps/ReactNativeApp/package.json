@@ -10,6 +10,16 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "build": "react-scripts build"
   },
+  "workspaces": {
+    "nohoist": [
+      "@react-native-community/async-storage",
+      "react-native",
+      "react-native/**",
+      "react-native-dev-menu",
+      "react-native-svg",
+      "jetifier"
+    ]
+  },
   "dependencies": {
     "@calebgregory/math": "0.1.0",
     "react": "17.0.1",
@@ -25,7 +35,9 @@
     "@types/react-test-renderer": "^16.9.2",
     "babel-jest": "^26.6.3",
     "eslint": "^7.14.0",
+    "get-yarn-workspaces": "^1.0.2",
     "jest": "^26.6.3",
+    "metro-config": "^0.66.0",
     "metro-react-native-babel-preset": "^0.64.0",
     "react-test-renderer": "17.0.1",
     "typescript": "^3.8.3"

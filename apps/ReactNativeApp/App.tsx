@@ -42,7 +42,7 @@
              color: isDarkMode ? Colors.white : Colors.black,
            },
          ]}>
-         {title + sum(3, 4)}
+         {title}
        </Text>
        <Text
          style={[
@@ -76,6 +76,7 @@
              backgroundColor: isDarkMode ? Colors.black : Colors.white,
            }}>
            <Section title="Step One">
+             {sum(2,4)}
              Edit <Text style={styles.highlight}>App.js</Text> to change this
              screen and then come back to see your edits.
            </Section>

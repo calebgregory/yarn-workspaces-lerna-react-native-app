@@ -28,6 +28,7 @@
  } from 'react-native/Libraries/NewAppScreen';
 
  import { sum } from '@calebgregory/math'
+ import { Words, Thumbs } from '@calebgregory/components'
 
  const Section: React.FC<{
    title: string;
@@ -75,6 +76,8 @@
            style={{
              backgroundColor: isDarkMode ? Colors.black : Colors.white,
            }}>
+           <Words text="here are some words" />
+           <Thumbs />
            <Section title="Step One">
              {sum(2,4)}
              Edit <Text style={styles.highlight}>App.js</Text> to change this

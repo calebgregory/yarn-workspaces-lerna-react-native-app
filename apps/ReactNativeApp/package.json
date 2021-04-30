@@ -21,6 +21,7 @@
     ]
   },
   "dependencies": {
+    "@calebgregory/components": "0.1.0",
     "@calebgregory/math": "0.1.0",
     "react": "17.0.1",
     "react-native": "0.64.0"

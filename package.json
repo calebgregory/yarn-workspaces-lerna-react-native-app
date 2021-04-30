@@ -2,7 +2,13 @@
   "name": "yarn-workspaces-lerna-react-native-app",
   "version": "0.0.0",
   "private": true,
-  "workspaces": ["apps/ReactNativeApp", "libraries/@calebgregory/components", "libraries/@calebgregory/math"],
+  "workspaces": [
+    "apps/ReactNativeApp",
+    "libraries/@calebgregory/components",
+    "libraries/@calebgregory/core",
+    "libraries/@calebgregory/errors",
+    "libraries/@calebgregory/math"
+  ],
   "repository": "git@github.com:calebgregory/yarn-workspaces-lerna-react-native-app.git",
   "author": "Caleb Gregory <calebgregory@gmail.com>",
   "license": "MIT"

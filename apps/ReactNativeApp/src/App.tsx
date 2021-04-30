@@ -22,7 +22,6 @@
 
  import { Colors } from 'react-native/Libraries/NewAppScreen';
 
- import { sum } from '@calebgregory/math'
  import { Words, Thumbs } from '@calebgregory/components'
  import { writeFile, readFile } from '@calebgregory/file-toy'
 
@@ -59,7 +58,7 @@
                show file
              </Text>
            </TouchableOpacity>
-           <Words text={'-> '+sum(1,3)+' (in file): '+fileContent} />
+           <Words text={'-> (in file): '+fileContent} />
            <Thumbs />
          </View>
        </ScrollView>

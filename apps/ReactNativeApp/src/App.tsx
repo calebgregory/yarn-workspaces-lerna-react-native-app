@@ -24,7 +24,7 @@
 
  import { sum } from '@calebgregory/math'
  import { Words, Thumbs } from '@calebgregory/components'
- import { writeFile, readFile } from './do/file/read-write'
+ import { writeFile, readFile } from '@calebgregory/file-toy'
 
  const App = () => {
    const [fileContent, setFileContent] = React.useState('')

@@ -58,6 +58,9 @@
       "jsx",
       "json",
       "node"
-    ]
+    ],
+    "moduleNameMapper": {
+      "react-native": "<rootDir>/node_modules/react-native"
+    }
   }
 }

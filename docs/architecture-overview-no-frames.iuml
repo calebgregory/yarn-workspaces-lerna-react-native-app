@@ -1,0 +1,38 @@
+@startuml architecture-overview-no-frames
+  skinparam component {
+    BackgroundColor<<App>> IndianRed
+    BackgroundColor<<Lib>> Chocolate
+  }
+  skinparam interface {
+    BackgroundColor GoldenRod
+  }
+
+  [ReactNativeApp] <<App>>
+  [node_js_app] <<App>>
+
+  [core] <<Lib>>
+  [core_react_native] <<Lib>>
+  [core_node_js] <<Lib>>
+
+
+  () errors
+  () components
+  () file_toy
+
+  note left of [core_react_native] : defines `init(): AppCore`\n  for react-native env
+  note left of [ReactNativeApp] : import { init } from 'core-react-native'\nimport { globalize } from 'core'\n\ncore = init()\nglobalize(core)\n\n/* use core in file_toy */
+
+  core_react_native ==> [ReactNativeApp]
+  core <== [ReactNativeApp]
+  core_node_js ==> [node_js_app]
+  core <== [node_js_app]
+  core <-up- errors
+
+  [ReactNativeApp] <- file_toy
+  file_toy -> [node_js_app]
+  [ReactNativeApp] <-- components
+
+  file_toy <- core
+
+  note bottom of file_toy : import { core } from 'core'\n\ncore().fs.writeFile()
+@enduml

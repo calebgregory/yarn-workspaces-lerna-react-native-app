@@ -2,7 +2,11 @@
 
 ## what do we have here?
 
-![PlantUML Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/calebgregory/yarn-workspaces-lerna-react-native-app/master/docs/architecture-overview.iuml&cache=no)
+![PlantUML Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/calebgregory/yarn-workspaces-lerna-react-native-app/master/docs/architecture-overview-no-frames.iuml&cache=no)
+
+Here is the same diagram, with conceptual groupings:
+
+![PlantUML Diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/calebgregory/yarn-workspaces-lerna-react-native-app/master/docs/architecture-overview-with-frames.iuml&cache=no)
 
 - `apps/`
   - [ReactNativeApp](./apps/ReactNativeApp/index.js)
@@ -10,6 +14,8 @@
 - `libraries/`
   - [__core__](./libraries/@calebgregory/core/src/app.ts)
     - is initialized and globalized by each of the apps individually
+      - [__core-react-native__](./libraries/@calebgregory/core-react-native/src/init.ts)
+      - [__core-node-js__](./libraries/@calebgregory/core-node-js/src/init.ts)
   - [file-toy](./libraries/@calebgregory/file-toy/src/do/file/read-write.ts)
     - uses `core/app()` to read and write a file
   - [components](./libraries/@calebgregory/components/src/index.tsx)

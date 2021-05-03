@@ -11,7 +11,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "yarn build; node -r ./dist/index.js",
+    "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
@@ -19,7 +19,9 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "@calebgregory/core": "0.1.0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -31,23 +33,19 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "node-js-app",
+  "name": "@calebgregory/core-node-js",
   "author": "Caleb Gregory",
-  "module": "dist/node-js-app.esm.js",
+  "module": "dist/core-node-js.esm.js",
   "size-limit": [
     {
-      "path": "dist/node-js-app.cjs.production.min.js",
+      "path": "dist/core-node-js.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/node-js-app.esm.js",
+      "path": "dist/core-node-js.esm.js",
       "limit": "10 KB"
     }
   ],
-  "dependencies": {
-    "@calebgregory/core": "0.1.0",
-    "@calebgregory/core-node-js": "0.1.0"
-  },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.10.2",
     "husky": "^6.0.0",

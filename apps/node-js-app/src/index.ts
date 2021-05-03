@@ -1,4 +1,5 @@
-import { init } from './init'
+import { resolve } from 'path'
+import { init } from '@calebgregory/core-node-js'
 import { globalize } from '@calebgregory/core'
 
 const INSTRUCTIONS = `
@@ -14,8 +15,10 @@ ${'*'.repeat(75)}
 ${'*'.repeat(75)}
 `
 
+const APP_DIR = resolve(__dirname, '../test/fs')
+
 async function main() {
-  const app = await init()
+  const app = await init(APP_DIR)
   globalize(app)
   console.log(INSTRUCTIONS)
 }

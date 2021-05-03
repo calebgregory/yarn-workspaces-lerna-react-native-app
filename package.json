@@ -6,6 +6,7 @@
     "apps/ReactNativeApp",
     "libraries/@calebgregory/components",
     "libraries/@calebgregory/core",
+    "libraries/@calebgregory/core-react-native",
     "libraries/@calebgregory/errors",
     "libraries/@calebgregory/file-toy"
   ],

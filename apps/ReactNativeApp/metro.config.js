@@ -21,16 +21,18 @@ function getConfig(appDir) {
 
     watchFolders are added to the JestHasteMap as `roots`:
       https://github.com/facebook/metro/blob/af23a1b27bcaaff2e43cb795744b003e145e78dd/packages/metro/src/node-haste/DependencyGraph.js#L135
-    I think this is, ultimately, why adding `watchFolders` is necessary.
    */
   const watchFolders = [
     // the workspace's node_modules; note that you must know that the root is
     // two directories up.
+    //
     // this allows you to use peer dependencies (like 'react-native-fs') from
-    // within libraries (like 'core-react-native') [, which is odd.]
+    // within libraries (like 'core-init-react-native') [, which is odd.]
     path.resolve(appDir, '../..', 'node_modules'),
+    // add other packages in workspace as well; this allows us to import these
+    // packages and use them via symlinks to our local version of them in
+    // development
     ...workspaces.filter(
-      // we're already watching appDir, so don't add it here
       workspaceDir => workspaceDir !== appDir,
     ),
   ];

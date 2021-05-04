@@ -46,7 +46,7 @@
   ],
   "dependencies": {
     "@calebgregory/core": "0.1.0",
-    "@calebgregory/core-node-js": "0.1.0"
+    "@calebgregory/core-init-node-js": "0.1.0"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.10.2",

@@ -6,8 +6,8 @@
     "apps/ReactNativeApp",
     "libraries/@calebgregory/components",
     "libraries/@calebgregory/core",
-    "libraries/@calebgregory/core-node-js",
-    "libraries/@calebgregory/core-react-native",
+    "libraries/@calebgregory/core-init-node-js",
+    "libraries/@calebgregory/core-init-react-native",
     "libraries/@calebgregory/errors",
     "libraries/@calebgregory/file-toy"
   ],

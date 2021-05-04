@@ -34,7 +34,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@calebgregory/core-react-native",
+  "name": "@calebgregory/core-init-react-native",
   "author": "Caleb Gregory",
   "module": "dist/core-react-native.esm.js",
   "size-limit": [

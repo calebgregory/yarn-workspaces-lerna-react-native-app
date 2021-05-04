@@ -1,9 +1,9 @@
-import { app } from '@calebgregory/core'
+import { core } from '@calebgregory/core'
 
 const THE_FILE = '/my-file.txt'
 
 export async function writeFile() {
-  const { fs } = app()
+  const { fs } = core()
 
   console.log('writing file...')
   await fs.writeFile(THE_FILE, `this is a file i wrote at ${new Date().toISOString()}`)
@@ -11,7 +11,7 @@ export async function writeFile() {
 }
 
 export async function readFile() {
-  const { fs } = app()
+  const { fs } = core()
 
   console.log('reading file...')
   const txt = await fs.readFile(THE_FILE)

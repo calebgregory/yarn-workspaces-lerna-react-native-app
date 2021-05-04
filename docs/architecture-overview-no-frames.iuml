@@ -22,8 +22,8 @@
   note left of [core_react_native] : defines `init(): AppCore`\n  for react-native env
   note left of [ReactNativeApp] : import { init } from 'core-react-native'\nimport { globalize } from 'core'\n\ncore = init()\nglobalize(core)\n\n/* use core in file_toy */
 
-  core_react_native ==> [ReactNativeApp]
-  core <== [ReactNativeApp]
+  core_react_native ==> [ReactNativeApp] : core = init()
+  core <== [ReactNativeApp] : globalize(core)
   core_node_js ==> [node_js_app]
   core <== [node_js_app]
   core <-up- errors

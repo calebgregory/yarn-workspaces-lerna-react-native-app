@@ -23,7 +23,7 @@
   "dependencies": {
     "@calebgregory/components": "0.1.0",
     "@calebgregory/core": "0.1.0",
-    "@calebgregory/core-react-native": "0.1.0",
+    "@calebgregory/core-init-react-native": "0.1.0",
     "@calebgregory/file-toy": "0.1.0",
     "react": "17.0.1",
     "react-native": "0.64.0",

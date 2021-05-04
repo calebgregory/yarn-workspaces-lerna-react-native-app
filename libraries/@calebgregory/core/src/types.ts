@@ -3,6 +3,6 @@ export interface FileSystem {
   writeFile: (filename: string, content: string) => Promise<void>;
 }
 
-export interface App {
+export interface AppCore {
   fs: FileSystem
 }

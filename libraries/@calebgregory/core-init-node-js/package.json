@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@calebgregory/core-node-js",
+  "name": "@calebgregory/core-init-node-js",
   "author": "Caleb Gregory",
   "module": "dist/core-node-js.esm.js",
   "size-limit": [

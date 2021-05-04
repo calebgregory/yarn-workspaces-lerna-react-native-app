@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { init } from '@calebgregory/core-node-js'
+import { init } from '@calebgregory/core-init-node-js'
 import { globalize } from '@calebgregory/core'
 
 const INSTRUCTIONS = `
